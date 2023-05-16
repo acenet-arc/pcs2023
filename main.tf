@@ -44,6 +44,8 @@ module "openstack" {
   nb_users = 100
   # Shared password, randomly chosen if blank
   guest_passwd = ""
+  
+  hieradata="profile::cvmfs::client::repositories: ['cvmfs-config.computecanada.ca', 'soft.computecanada.ca','restricted.computecanada.ca']"
 }
 
 output "accounts" {
