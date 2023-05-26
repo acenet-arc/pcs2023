@@ -12,7 +12,7 @@ module "openstack" {
   config_git_url = "https://github.com/ComputeCanada/puppet-magic_castle.git"
   config_version = "12.4.0"
 
-  cluster_name = "pcs2023-2"
+  cluster_name = "pcs2023-3"
   domain       = "ace-net.training"
   image        = "Rocky-8"
 
@@ -38,7 +38,7 @@ module "openstack" {
     }
   }
 
-  public_keys = ["ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAACAQClvBnQRC2Tesx+357C+RjpN1MxPgbwLrLxSidjl3tInYUVGfwBuNOZ5A+EJBImoCDLZDruioKu2hCM+aR7BlqQQG63wIzIIijTyJsJypmPIH2YpdMPmxY8ntX5ju/mq/F1IBs9hFYWQ5FNwblGl6mxI5HjYcHtNGmfFF0uxmYaTJku+wY0N/GMiTru5XEFVwXh11bg/INaH4GQjbjIn5nlaHBqc2zISqdJ/gc0hPJRnUgYrP0rtlXF3uhQh8Xepu8sM+pcOhqR76ZaJ81SOmDI/zvaejdDjdSEox1TSWNgXSSB6EIdD1lYEEXSWs/d4cIUE7k1X+/j5oVdtBgrBlvB5RNDkBF5m66hh+IgTgFrdX3P1XgSuqZqHy5Zh1Th9di6MqNUt+Y0kd/4Wm54yG1HPbGNKH2mpncWxWa4C2ORkk1TMftONrLvXWbvJVmRLV16koYHE0tezITsrHcivfIx++wOU5eBrcA5mJJknU38vaC135zJ/e7qjTJ2rj9Ja7euqPa34oRzMjMuhJTy3mB9zDuen+gr9XumW/OnUdpqnwg/IlwmuuugWV2KQ7uDFjuBB+ho3ycMCv5zZhmAX7s9Sg3NDoNze88qZG0cDzVWvOBdDe+U+0TTSB+a5TdhzYlX4gEx01Z/UH84SfJGrpxpcEoVxKQB9zsGuNy2ina/Hw== ubuntu@castle-manager"]
+  public_keys = ["ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIE5wTADe54hOIewOERz1cOp1LzF5UmbyCl+9hyhzNZ3T cgeroux@sol"]
   generate_ssh_key = true
 
   nb_users = 100
