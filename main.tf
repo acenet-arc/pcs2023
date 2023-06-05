@@ -20,7 +20,7 @@ module "openstack" {
     mgmt   = { type = "p4-6gb", tags = ["puppet", "mgmt", "nfs"], count = 1 }
     login  = { type = "p8-12gb", tags = ["login", "public", "proxy"], count = 1 }
     node   = { type = "p4-6gb", tags = ["node"], count = 1 }
-    node16c = { type = "c16-60gb-392", tags = ["node"], count = 1 }
+    node16c = { type = "c16-60gb-392", tags = ["node"], count = 6 }
     gpunode   = { type = "g1-8gb-c4-22gb", tags = ["node"], count = 1 }
   }
 
